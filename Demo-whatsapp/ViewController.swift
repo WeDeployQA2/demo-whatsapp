@@ -119,8 +119,8 @@ class ViewController: SLKTextViewController {
 		let pointSize: CGFloat = MessageCell.defaultFontSize()
 
 		let attributes = [
-			NSFontAttributeName : UIFont.systemFont(ofSize: pointSize),
-			NSParagraphStyleAttributeName : paragraphStyle
+			NSAttributedStringKey.font : UIFont.systemFont(ofSize: pointSize),
+			NSAttributedStringKey.paragraphStyle : paragraphStyle
 		]
 
 		let width: CGFloat = MessageCell.MaxMessageWidth - 8
